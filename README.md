@@ -1,2 +1,2 @@
 # Dio-desafio-github-primeiro-reposito-rio
-Desafio de projeto sobre git/github
+### Explore os meus projetos e veja minha evolução.
