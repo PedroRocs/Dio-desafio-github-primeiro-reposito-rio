@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-basis</title>
+  </head>
+  <style>
+    .flex-container {
+      display: flex;
+      max-width: 900px;
+      border: 1px solid black;
+    }
+
+    .item {
+      background-color: orange;
+      color: white;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .bauto {
+      flex-basis: auto;
+    }
+
+    .fb-0{
+        flex-basis: 0;
+    }
+    .fb-1 {
+      flex-basis: 90px;
+    }
+
+    .fg-0{
+       flex-grow: 0; 
+    }
+    .fg-1{
+        flex-grow: 1;
+    }
+    .fg-2{
+        flex-grow: 2;
+    }
+    .fg-3{
+        flex-grow: 3;
+    }
+    
+    .w100{
+        width:100px;
+    }
+
+  </style>
+  <body>
+    <p>Flex-basis - auto</p>
+    <div class="flex-container">
+      <div class="item bauto fg-2">A</div>
+      <div class="item bauto fg-2">BBB</div>
+      <div class="item bauto fg-2">C</div>
+      <div class="item bauto fg-1">DDDD</div>
+    </div>
+ 
+    <p>Flex-basis(0)</p>
+    <div class="flex-container">
+        <div class="item fb-0 fg-1">AAAA</div>
+        <div class="item fb-0 fg-1">BBB</div>
+        <div class="item fb-0 fg-1">C</div>
+        <div class="item fb-0 fg-1">DDDD</div>
+      </div>
+
+      <p>Flex-basis(1)</p>
+      <div class="flex-container">
+          <div class="item fb-1 fg-1">AAAA</div>
+          <div class="item fb-1 fg-1">BBB</div>
+          <div class="item fb-1 fg-1">C</div>
+          <div class="item fb-1 fg-1">DDDD</div>
+        </div>
+
+
+      <p>Flex-basis + width</p>
+      <div class="flex-container">
+          <div class="item">AAAA</div>
+          <div class="item">BBB</div>
+          <div class="item w100 fg-1 ">C</div>
+          <div class="item w100 fg-2 ">DDDD</div>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos | flex-flow</title>
+  </head>
+
+  <style>
+    .flex-container {
+      display: flex;
+      max-width: 400px;
+      border: 2px solid black;
+      height: 200px;
+    }
+    .item {
+      background: purple;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      margin: 5px;
+      color: white;
+      text-align: center;
+    }
+
+    .default {
+      flex-flow: row nowrap;
+    }
+
+    .row-wrap {
+      flex-flow: row wrap;
+    }
+
+    .row-reverse-wrap {
+      flex-flow: row-reverse wrap;
+    }
+
+    .row-wrap-reverse {
+      flex-flow: row wrap-reverse;
+    }
+
+    .row-reverse-wrap-reverse {
+      flex-flow: row-reverse wrap-reverse;
+    }
+  </style>
+  <body>
+    <h1>default</h1>
+    <div class="flex-container default">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">5</div>
+    </div>
+
+    <h1>row-wrap</h1>
+    <div class="flex-container row-wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+    </div>
+
+    <h1>row-reverse wrap</h1>
+    <div class="flex-container row-reverse-wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+    </div>
+
+    <h1>row wrap-reverse</h1>
+    <div class="flex-container row-wrap-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">5</div>
+    </div>
+
+    <h1>row-reverse wrap-reverse</h1>
+    <div class="flex-container row-reverse-wrap-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
